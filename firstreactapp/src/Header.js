@@ -7,3 +7,4 @@ function Header() {
 }
 
 export default Header;
+//this just displays text on the page

@@ -1,6 +1,6 @@
 import HornedBeast from './HornedBeast';
 
-
+//this is the main component that has 2 hornbeast components with 2 properties each
 function Main() {
     return (
         <div>
