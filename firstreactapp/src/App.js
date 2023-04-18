@@ -13,3 +13,5 @@ function App() {
 }
 
 export default App;
+
+//the app componnent renders all components 
