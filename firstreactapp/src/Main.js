@@ -1,7 +1,5 @@
 import HornedBeast from './HornedBeast';
 import data from './data.json';
-
-
 //this is the main component that has 2 hornbeast components with 2 properties each
 function Main() {
     return (
@@ -26,7 +24,7 @@ function Main() {
             <HornedBeast title={data[16].title} description={data[16].description} image={data[16].image_url} />
             <HornedBeast title={data[17].title} description={data[17].description} image={data[17].image_url} />
             <HornedBeast title={data[18].title} description={data[18].description} image={data[18].image_url} />
-            <HornedBeast title={data[19].title} description={data[19].description} image={data[19].image_url} />
+            <HornedBeast title={data[19].title} description={data[19].description} image={data[19].image_url} /> 
         </div>
     );
 }

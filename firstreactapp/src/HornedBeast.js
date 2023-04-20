@@ -1,4 +1,6 @@
-import {useState} from "react";
+import './App.css';
+import React, {useState} from "react";
+import {Card, Button} from "react-bootstrap";
 
 //this is my hornbeast component that has props as an argument this component inherits the title, desription, and image from the main component
 
@@ -9,14 +11,20 @@ function HornedBeast(props) {
         setFavorites(favorites+1)
     }
     return (
-        <div onclick={state}>
 
+        <>
+        { <Card>
+            <Card.Body>
             <h2> {props.title} </h2> 
              <p>{props.description}</p>
-             <img src={props.image} alt={""}/>
-             <p>&#9829;{favorites}</p>
-        </div>
-        
+            </Card.Body>
+            <Card.Img src={props.image} alt={""}/>
+            <Button onClick={state}>&#9829;{favorites}</Button>
+        </Card>}
+            
+             
+             
+             </>
 
     );
 }

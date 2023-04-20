@@ -1,15 +1,17 @@
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Container from 'react-bootstrap/Container';
 import Header from './Header';
 import Footer from './Footer';
 import Main from './Main';
 
 function App() {
   return (
-    <div className="App">
+    <Container className="App">
       <Header/>
       <Main/>
       <Footer/>
-    </div>
+    </Container>
   );
 }
 
