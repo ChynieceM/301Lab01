@@ -3,9 +3,20 @@ import data from './data.json';
 //this is the main component that has 2 hornbeast components with 2 properties each
 function Main() {
     return (
-        <div>
-            <main> Main </main>
-            <HornedBeast title={data[0].title} description={data[0].description} image={data[0].image_url} />
+        <div class="d-flex justify-content-space-center flex-wrap">
+            {data.map(Beast=>{
+                return(
+                <HornedBeast favorites={0}
+                key={Beast._id}
+                title={Beast.title}
+                id={Beast._id}
+                description={Beast.description}
+                image={Beast.image_url}
+                />
+
+            )})}
+
+            {/* <HornedBeast title={data[0].title} description={data[0].description} image={data[0].image_url} />
             <HornedBeast title={data[1].title} description={data[1].description} image={data[1].image_url} />
             <HornedBeast title={data[2].title} description={data[2].description} image={data[2].image_url} />
             <HornedBeast title={data[3].title} description={data[3].description} image={data[3].image_url} />
@@ -24,7 +35,7 @@ function Main() {
             <HornedBeast title={data[16].title} description={data[16].description} image={data[16].image_url} />
             <HornedBeast title={data[17].title} description={data[17].description} image={data[17].image_url} />
             <HornedBeast title={data[18].title} description={data[18].description} image={data[18].image_url} />
-            <HornedBeast title={data[19].title} description={data[19].description} image={data[19].image_url} /> 
+        <HornedBeast title={data[19].title} description={data[19].description} image={data[19].image_url} />*/} 
         </div>
     );
 }
