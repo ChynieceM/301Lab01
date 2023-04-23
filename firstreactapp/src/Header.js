@@ -3,7 +3,7 @@ import './App.css';
 function Header() {
     return (
         <h1>
-            Header
+            Horned Beasts
         </h1>
     );
 }

@@ -1,9 +1,10 @@
 import HornedBeast from './HornedBeast';
 import data from './data.json';
+
 //this is the main component that has 2 hornbeast components with 2 properties each
-function Main() {
+function Main(props) {
     return (
-        <div class="d-flex justify-content-space-center flex-wrap">
+        <div class="d-flex justify-content-center flex-wrap">
             {data.map(Beast=>{
                 return(
                 <HornedBeast favorites={0}
@@ -12,6 +13,7 @@ function Main() {
                 id={Beast._id}
                 description={Beast.description}
                 image={Beast.image_url}
+                updateFunction={props.updateFunction}
                 />
 
             )})}
