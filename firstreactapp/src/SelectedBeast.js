@@ -14,6 +14,7 @@ function SelectedBeast(props) {
   // const handleShow = () => setShow(true);
   return (
     <Modal show={show} onHide={handleClose} style={{ border: "3px solid blue" }}>
+
       <Modal.Header closeButton>
           <Modal.Title>{props.variable.title}</Modal.Title>
         </Modal.Header>
