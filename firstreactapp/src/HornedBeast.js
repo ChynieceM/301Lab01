@@ -18,20 +18,6 @@ function HornedBeast(props) {
     return (
 
         <>
-<<<<<<< Updated upstream
-        { <Card style={{width: '18rem' }}>
-            <Card.Body>
-            <h2> {props.title} </h2> 
-             <p>{props.description}</p>
-            </Card.Body>
-            <Card.Img src={props.image} alt={""} class='mw-100' height={'200px'} />
-            <Button onClick={state}>&#9829;{favorites}</Button>
-        </Card>}
-            
-             
-             
-             </>
-=======
             {<Card style={{ width: '18rem' }}>
                 <Card.Body>
                     <h2> {props.title} </h2>
@@ -44,7 +30,6 @@ function HornedBeast(props) {
 
 
         </>
->>>>>>> Stashed changes
 
     );
 }
