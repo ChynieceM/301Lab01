@@ -10,9 +10,15 @@ function HornedBeast(props) {
     function state(){
         setFavorites(favorites+1)
     }
+    function clickedListener() {
+         /*props.updateFunction(true);*/
+
+        props.SelectedBeastFunction(props.variable)
+    }
     return (
 
         <>
+<<<<<<< Updated upstream
         { <Card style={{width: '18rem' }}>
             <Card.Body>
             <h2> {props.title} </h2> 
@@ -25,6 +31,20 @@ function HornedBeast(props) {
              
              
              </>
+=======
+            {<Card style={{ width: '18rem' }}>
+                <Card.Body>
+                    <h2> {props.title} </h2>
+                    <p>{props.description}</p>
+                </Card.Body>
+                <Card.Img onClick={() => clickedListener()} src={props.image} alt={""} class='mw-100' height={'200px'} />
+                <Button onClick={state}>&#9829;{favorites}</Button>
+            </Card>}
+
+
+
+        </>
+>>>>>>> Stashed changes
 
     );
 }

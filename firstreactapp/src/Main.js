@@ -1,10 +1,20 @@
 import HornedBeast from './HornedBeast';
+<<<<<<< Updated upstream
 import data from './data.json';
+=======
+//import data from './data.json';
+
+>>>>>>> Stashed changes
 //this is the main component that has 2 hornbeast components with 2 properties each
 function Main() {
     return (
+<<<<<<< Updated upstream
         <div class="d-flex justify-content-space-center flex-wrap">
             {data.map(Beast=>{
+=======
+        <div class="d-flex justify-content-center flex-wrap">
+            {props.data.map(Beast=>{
+>>>>>>> Stashed changes
                 return(
                 <HornedBeast favorites={0}
                 key={Beast._id}
@@ -12,6 +22,13 @@ function Main() {
                 id={Beast._id}
                 description={Beast.description}
                 image={Beast.image_url}
+<<<<<<< Updated upstream
+=======
+                updateFunction={props.updateFunction}
+                variable={Beast}
+                SelectedBeastFunction={props.SelectedBeastFunction}
+                CurrentBeastInstance={props.currentSelectedBeastVariable}
+>>>>>>> Stashed changes
                 />
 
             )})}
