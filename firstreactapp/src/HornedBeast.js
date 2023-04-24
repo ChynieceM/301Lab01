@@ -10,6 +10,11 @@ function HornedBeast(props) {
     function state() {
         setFavorites(favorites + 1)
     }
+    function clickedListener() {
+         /*props.updateFunction(true);*/
+
+        props.SelectedBeastFunction(props.variable)
+    }
     return (
 
         <>

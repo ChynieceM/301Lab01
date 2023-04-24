@@ -10,14 +10,15 @@ import data from './data.json'
 
 
 function App() {
-  const [displaySelectedBeast, setDisplaySelectedBeast] = useState(false)
-  const [currentSelectedBeast, setCurrentSelectedBeast] = useState(undefined)
+
+  const [displaySelectedBeast, setDisplaySelectedBeast] = useState(false) //returns an array and sets the variable to a function that updates the variable
+  const [currentSelectedBeast, setCurrentSelectedBeast] = useState("undefined")
   return (
     <Container className="App">
       <Header/>
       <Main updateFunction={setDisplaySelectedBeast} data={data} variable = {displaySelectedBeast} SelectedBeastFunction={setCurrentSelectedBeast} currentSelectedBeastVariable ={currentSelectedBeast}/>
       <Footer/>
-      {displaySelectedBeast === true ? <SelectedBeast variable = {displaySelectedBeast} variableTwo = {setDisplaySelectedBeast}/>:<></>} {/*turnary, if statement on one line */}
+      {currentSelectedBeast !== "undefined" ? <SelectedBeast variable = {currentSelectedBeast} variableTwo = {setCurrentSelectedBeast}/>:<></>} {/*turnary, if statement on one line */}
       {/* <Button onClick={()=>{
         if (displaySelectedBeast === true){
           setDisplaySelectedBeast(false)
