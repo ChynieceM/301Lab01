@@ -14,6 +14,9 @@ function Main(props) {
                 description={Beast.description}
                 image={Beast.image_url}
                 updateFunction={props.updateFunction}
+                variable={Beast}
+                SelectedBeastFunction={props.SelectedBeastFunction}
+                
                 />
 
             )})}

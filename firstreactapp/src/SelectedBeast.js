@@ -2,29 +2,24 @@ import { useState } from 'react';
 import './App.css';
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
+import HornedBeast from './HornedBeast';
 
-function SelectedBeast(){
-const [show, setShow] = useState(true);
+function SelectedBeast(props) {
+  const [show, setShow] = useState(true);
 
-const handleClose = () => setShow(false);
-const handleShow = () => setShow(true);
-return (
-    <>
-      <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
-        <Modal.Footer>
-           <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
-          </Button> 
-        </Modal.Footer>
-      </Modal>
-</>
-)}
+  function handleClose() { //updates everytimes I click an image
+    setShow(false);//determines if the modal closes or not
+    props.variableTwo(false);
+  };
+  // const handleShow = () => setShow(true);
+  return (
+    <Modal show={show} onHide={handleClose} style={{ border: "3px solid blue" }}>
+      <p>{props.variable.title}
+        <br />
+        {props.variable.description}
+      </p>
+    </Modal>
+  )
+}
 
 export default SelectedBeast;
