@@ -17,7 +17,8 @@ function SelectedBeast(props) {
       <Modal.Header closeButton>
           <Modal.Title>{props.variable.title}</Modal.Title>
         </Modal.Header>
-      <p>
+      <p> <Modal.Body> <img class="mw-100" height={'200px'} src={props.variable.image_url} alt=""/>
+        </Modal.Body> 
         <br />
         {props.variable.description}
       </p>
