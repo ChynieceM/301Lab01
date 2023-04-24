@@ -10,7 +10,6 @@ import data from './data.json'
 
 
 function App() {
-
   const [displaySelectedBeast, setDisplaySelectedBeast] = useState(false) //returns an array and sets the variable to a function that updates the variable
   const [currentSelectedBeast, setCurrentSelectedBeast] = useState("undefined")
   return (

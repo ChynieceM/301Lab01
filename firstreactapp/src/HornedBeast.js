@@ -23,7 +23,7 @@ function HornedBeast(props) {
                     <h2> {props.title} </h2>
                     <p>{props.description}</p>
                 </Card.Body>
-                <Card.Img onClick={() => { props.updateFunction(true); props.SelectedBeastFunction(props.currentSelectedBeastVariable) }} src={props.image} alt={""} class='mw-100' height={'200px'} />
+                <Card.Img onClick={() => clickedListener()} src={props.image} alt={""} class='mw-100' height={'200px'} />
                 <Button onClick={state}>&#9829;{favorites}</Button>
             </Card>}
 
