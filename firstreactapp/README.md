@@ -1,3 +1,15 @@
+## Lab 04
+
+Number and name of feature: 1
+
+Estimate of time needed to complete: 1.5 hours
+
+Start time: 10:30am
+
+Finish time: 12:00pm
+
+Actual time needed to complete: 1.5 hours
+
 ## Lab 03
 
 Number and name of feature: 1
@@ -34,3 +46,4 @@ Start time: 1:00pm
 Finish time: 3:00pm
 
 Actual time needed to complete: 1 hour
+
