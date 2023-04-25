@@ -11,7 +11,7 @@ function HornedBeast(props) {
         setFavorites(favorites + 1)
     }
     function clickedListener() {
-         /*props.updateFunction(true);*/
+         
 
         props.SelectedBeastFunction(props.variable)
     }
@@ -23,7 +23,7 @@ function HornedBeast(props) {
                     <h2> {props.title} </h2>
                     <p>{props.description}</p>
                 </Card.Body>
-                <Card.Img onClick={() => clickedListener()} src={props.image} alt={""} class='mw-100' height={'200px'} />
+                <Card.Img onClick={() => clickedListener()} src={props.image} alt={""} className='mw-100' height={'200px'} />
                 <Button onClick={state}>&#9829;{favorites}</Button>
             </Card>}
 
@@ -33,6 +33,5 @@ function HornedBeast(props) {
 
     );
 }
-//const root = ReactDOM.createRoot(document.getElementById('root'));
-//root.render(<HornedBeast/>);
+
 export default HornedBeast;
