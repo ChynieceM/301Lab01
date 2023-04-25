@@ -1,4 +1,3 @@
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Header from './Header';
@@ -15,21 +14,11 @@ function App() {
   return (
     <Container className="App">
       <Header/>
-      <Main updateFunction={setDisplaySelectedBeast} data={data} variable = {displaySelectedBeast} SelectedBeastFunction={setCurrentSelectedBeast} currentSelectedBeastVariable ={currentSelectedBeast}/>
+      <Main updateFunction={setDisplaySelectedBeast} data={data} variable = {displaySelectedBeast} SelectedBeastFunction={setCurrentSelectedBeast} currentSelectedBeast ={currentSelectedBeast}/>
       <Footer/>
       {currentSelectedBeast !== "undefined" ? <SelectedBeast variable = {currentSelectedBeast} variableTwo = {setCurrentSelectedBeast}/>:<></>} {/*turnary, if statement on one line */}
-      {/* <Button onClick={()=>{
-        if (displaySelectedBeast === true){
-          setDisplaySelectedBeast(false)
-        }else {
-          setDisplaySelectedBeast(true)
-        }
-      }}>Display Beast</Button> */}
-    
     </Container>
   );
 }
 
 export default App;
-
-//the app componnent renders all components 
