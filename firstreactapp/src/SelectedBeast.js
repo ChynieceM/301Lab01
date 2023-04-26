@@ -27,6 +27,6 @@ function SelectedBeast(props) {
       </p>
     </Modal>
   )
-}
+};
 
 export default SelectedBeast;
